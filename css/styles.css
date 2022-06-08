@@ -11,6 +11,19 @@
 основной #E5E5E5
 вторичный #F5F4FA
 */
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 :root{
     --primary-text-color:#212121;
     --second-text-color:#757575;
@@ -28,11 +41,12 @@
 body{
     background-color:var(--white);
     font-family: Roboto, sans-serif;
-    width: 1600px;
-    margin: 0 auto;
+    margin: 0;
 }
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link{
@@ -57,6 +71,7 @@ body{
 
 /* навигация начало */
 
+
 .site-nav .link{
     color: var(--primary-text-color) ;
     letter-spacing: 0.02em;
@@ -71,6 +86,7 @@ body{
 
 .site-cont{
     list-style: none;
+    margin: 0;
 }
 
 .site-cont .link{
@@ -92,6 +108,17 @@ body{
 
 .button{
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    display: inline-block;
+    min-width: 73px;
+    border:1px solid transparent ;
+}
+
+.button.secondr{
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 .button.secondary {
@@ -112,17 +139,23 @@ body{
 
 /* section hero open */ 
 
+.hero{
+    text-align: center;
+}
+
 .hero-title{
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 44px;
     line-height: 4;
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /* section hero close */
 
 /* section */
+
 
 /* about-list section */
 
@@ -136,6 +169,7 @@ body{
     line-height: 1.1;
     letter-spacing: 0.03em;
     font-weight: 700;
+    margin: 0%;
 }
 
 .about-list .description {
@@ -143,6 +177,7 @@ body{
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 
 .title-center{
@@ -152,6 +187,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 0;
 }
 
 .work-list{
@@ -233,4 +270,32 @@ body{
     font-size: 16px;
     line-height: 2;
 }
+
+/* header open */
+
+ .conteiner-header{ 
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+ 
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.conteiner.ourcomanda{
+    background-color: var(--bg-primary-color);
+}
+
+
+
+
 
