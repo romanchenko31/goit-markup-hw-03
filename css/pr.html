@@ -8,38 +8,56 @@
 </head>
 <body>
     <style>
-         .conteiner{
-             background-color: #353535;
-             list-style: none;
-             
-         }
-.link{
-    color: aliceblue;
-    padding: 6px 22px;
-    display: inline-block;
-    border-radius: 4px;
-    text-decoration: none;
-    min-width: 130px;
-    text-align: center;
-    border: 1px solid transparent;
+         
+.wrapper{
+    display:flex;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
     
 }
-.link.p{
+.cont{
+    width: 200px;
+    height: 200px;
     background-color: blueviolet;
 }
-.link.s{
-    background-color: white;
-    color: black;
-    border: 1px solid blue;
+.conter{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(141, 226, 43);
+}
+
+.wrapper:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+
+.main .wrapper:nth-child(2n+1) .cont{
+margin-right: 100px;
+}
+.main .wrapper:nth-child(2n) .cont{
+margin-left: 100px;
 }
 
          
-
     </style>
-    <ul class="conteiner">
-        <li><a href="#" class="link s">home</a></li>
-        <li><a href="#" class="link p">articl</a></li>
-        <li><a href="#" class="link">contact</a></li>
-    </ul>
+    <div class="main">
+    <div class="wrapper">
+        <div class="cont"></div>
+        <div class="conter"></div>
+    </div>
+    <div class="wrapper">
+        <div class="cont"></div>
+        <div class="conter"></div>
+    </div>
+    <div class="wrapper">
+        <div class="cont"></div>
+        <div class="conter"></div>
+    </div>
+    <div class="wrapper">
+        <div class="cont"></div>
+        <div class="conter"></div>
+    </div>
+    </div>
 </body>
 </html>
